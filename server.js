@@ -31,6 +31,8 @@ const promptUser = () => {
         type: 'lsit',
         name: 'choices',
         message: 'What would you like to do?',
+        choices: ['View all dpartments,',
+                 ]
     }
     ])
 }
