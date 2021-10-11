@@ -42,9 +42,14 @@ const promptUser = () => {
                   'View employees by department',
                   'Delete a department',
                   'Delete a role',
-                  
+                  'Delete an employee',
+                  'View depaftment budgets',
+                  'No Action'
 
 
-    }
-    ])
+
+
+   
+                }
+ ])
 }
