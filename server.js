@@ -24,3 +24,13 @@ afterConnection = () => {
     console.log("***********************************")
     promptUser();
   };
+
+const promptUser = () => {
+    inquirer.prompt ([
+    {
+        type: 'lsit',
+        name: 'choices',
+        message: 'What would you like to do?',
+    }
+    ])
+}
