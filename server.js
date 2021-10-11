@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     datbase: 'employee_db'
 });
 
-connection.connect(er => {
+connection.connect(err => {
     if (err) throw err;
     console.log('connected as id ' + connection.threadId);
 });
@@ -46,4 +46,4 @@ afterConnection = () => {
                   'View department budgets',
                   'No Action']
       }
-    ])
+    ]) 
