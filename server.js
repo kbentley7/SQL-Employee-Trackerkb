@@ -28,11 +28,23 @@ afterConnection = () => {
 const promptUser = () => {
     inquirer.prompt ([
     {
-        type: 'lsit',
+        type: 'list',
         name: 'choices',
         message: 'What would you like to do?',
         choices: ['View all dpartments,',
-                 ]
+                  'view all roles',
+                  'View all employess',
+                  'Add a department',
+                  'Add a role',
+                  'Add an employee',
+                  'Update an employee role',
+                  'Update an employee manager',
+                  'View employees by department',
+                  'Delete a department',
+                  'Delete a role',
+                  
+
+
     }
     ])
 }
