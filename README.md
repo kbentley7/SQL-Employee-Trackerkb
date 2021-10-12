@@ -10,18 +10,17 @@
 - [Contact Information](#contact-information)
 
 ### Description
-Create a functional Note Taker
+A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
 
 ### Installation
-App is deployed to Heroku here: If choosing to use from terminal, open terminal and run
-node server.js
+The user should clone the repository from GitHub. This application requires Node.js, inquirer, console.table and my mysql2.  To start application run `npm start`. To view database from MySQL `run mysql -u root -p`.
 ### Usage
-EXPRESS Note Taker is intended to be used for anyone who needs a place to organize their tasks and thoughts.
+This application will allow users to view, add, and edit employees, roles, departments, and managers
 
-[Heroku Deployed App](https://notetaker-keb.herokuapp.com/)
 
-[Demo](https://drive.google.com/file/d/1AeJWzY7PKuHt9F8pN5OFiac_h8EZqFHK/view?usp=sharing)
+
+[Demo](')
 
 
 ### Contribution
