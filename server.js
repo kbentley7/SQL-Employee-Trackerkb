@@ -315,7 +315,7 @@ addEmployee = () => {
 
               const managerSql = `SELECT * FROM employee`;
 
-              connection.promise().query(managerSql, (err, data) => {
+              connection.query(managerSql, function (err, data) {
                 if (err) throw err;
 
                 const managers = data.map(({ id, first_name, last_name }) => ({ name: first_name + " "+ last_name, value: id }));
