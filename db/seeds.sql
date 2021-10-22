@@ -1,30 +1,38 @@
-INSERT INTO department (name)
-VALUES 
-('IT'),
-('Finance & Accounting'),
-('Sales & Marketing'),
-('Operations');
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Jim', 'Kelly', 1, null);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Bruce', 'Lee', 2, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Sonny', 'Chiba', 2, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Jet', 'Li', 4, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Donny', 'Yen', 3, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Chuck', 'Norris', 5, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Jackie', 'Chan', 6, null);
+
+INSERT INTO department (department_name)
+VALUES ('Management');
+INSERT INTO department (department_name)
+VALUES ('Sales');
+INSERT INTO department (department_name)
+VALUES ('Accounting');
+INSERT INTO department (department_name)
+VALUES ('Reception');
+INSERT INTO department (department_name)
+VALUES ('Human Resources');
 
 INSERT INTO role (title, salary, department_id)
-VALUES
-('Full Stack Developer', 80000, 1),
-('Software Engineer', 120000, 1),
-('Accountant', 10000, 2), 
-('Finanical Analyst', 150000, 2),
-('Marketing Coordindator', 70000, 3), 
-('Sales Lead', 90000, 3),
-('Project Manager', 100000, 4),
-('Operations Manager', 90000, 4);
-
-
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES 
-('Sonny', 'Chiba', 2, null),
-('Bruce', 'Lee', 1, 1),
-('Jim', 'Kelly', 4, null),
-('Chuck', 'Norris', 3, 3),
-('Jet', 'Li', 6, null),
-('Donnie', 'Yen', 5, 5),
-('Jackie', 'Chan', 7, null),
-('Keiko', 'Fukuda', 8, 7);
-
+VALUES ('General Manager', 120000, 1);
+INSERT INTO role (title, salary, department_id)
+VALUES ('Salesman', 80000, 2);
+INSERT INTO role (title, salary, department_id)
+VALUES ('Accountant', 90000, 4);
+INSERT INTO role (title, salary, department_id)
+VALUES ('Receptionist', 40000, 3);
+INSERT INTO role (title, salary, department_id)
+VALUES ('Human Resource Officer', 75000, 5);
+INSERT INTO role (title, salary, department_id)
+VALUES ('CEO', 250000, null);
