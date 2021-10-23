@@ -17,14 +17,13 @@ update department
 set name = "Human Resources"
 where name = "HR";
 
-create table role(
-id int not null auto_increment,
-title varchar(50),
-salary decimal(10,2),
-department_id integer,
-primary key (id)
+CREATE TABLE role (
+    id INT AUTO_INCREMENT NOT NULL,
+    title VARCHAR(30) NOT NULL,
+    salary DECIMAL(10, 0) NOT NULL,
+    department_id INT,
+    PRIMARY KEY (id)
 );
-
 insert into role (title, salary)
 values ("Junior Developer", 75000), ("Senior Developer", 100000), ("Team Lead", 125000), ("Architect", 150000);
 
