@@ -9,7 +9,7 @@ VALUES ('Sonny', 'Chiba', 4, 1);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('Angela', 'Mao', 3, 1);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Gordon', 'Lee', 5, 2);
+VALUES ('Gordon', 'Lui', 5, 2);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ('Polly', 'Shang-Kuan', 6, null);
 
