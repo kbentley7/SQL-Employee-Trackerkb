@@ -8,9 +8,9 @@ const consoleTable = require("console.table");
 
 const connection = mysql.createConnection({
   host: "localhost",
-  port: 3001,
+  port: 3306,
   user: "root",
-  password: "Eagles_12",
+  password: "Eagles12",
   database: "employee_db"
 });
 
@@ -184,6 +184,7 @@ function viewEmployee() {
 }
 
 function updateRole() {
+
   const query = "SELECT id, first_name, last_name, role_id  FROM employee";
   connection.query(query, function(err, res) {
     if (err) throw err;
@@ -193,6 +194,7 @@ function updateRole() {
         type: "input",
         message: "Which employee needs to be updated? (please use number from id column only)",
         name: "employee"
+        
       });
     }
   });

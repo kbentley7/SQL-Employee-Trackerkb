@@ -1,7 +1,7 @@
 
 USE employee_db;
 
---Seed data from Patrick B--
+
 
 --add department
 INSERT INTO department
